@@ -11,6 +11,10 @@ import subprocess as ssubprocess
 import sshuttle.helpers as helpers
 from sshuttle.helpers import log, debug1, debug2, debug3
 
+# 2017/06/08 jbratton
+# - decode seed host names before processing
+# - use FQDNs when adding to /etc/hosts
+
 POLL_TIME = 60 * 15
 NETSTAT_POLL_TIME = 30
 CACHEFILE = os.path.expanduser('~/.sshuttle.hosts')

@@ -16,6 +16,9 @@ from sshuttle.helpers import log, debug1, debug2, debug3, Fatal, islocal, \
     resolvconf_nameservers
 from sshuttle.methods import get_method, Features
 
+# 2017/06/08
+# - allow FQDNs in /etc/hosts
+
 try:
     # try getting recvmsg from python
     import socket as pythonsocket

@@ -1,3 +1,7 @@
+*Note*: This fork of sshuttle fixes a bug which caused sshuttle to crash
+on startup when the ``--seed-hosts`` option was used. It also includes a
+change to add FQDNs to ``/etc/hosts`` when using ``--seed-hosts``.
+
 sshuttle: where transparent proxy meets VPN meets ssh
 =====================================================
 
