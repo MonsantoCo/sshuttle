@@ -265,7 +265,7 @@ def hw_main(seed_hosts, auto_hosts):
            % platform.python_version())
 
     for h in seed_hosts:
-        check_host(h)
+        check_host(h.decode("ASCII"))
 
     if auto_hosts:
         read_host_cache()
