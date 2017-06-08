@@ -68,8 +68,7 @@ def read_host_cache():
 
 
 def found_host(hostname, ip):
-    hostname = re.sub(r'\..*', '', hostname)
-    hostname = re.sub(r'[^-\w]', '_', hostname)
+    hostname = re.sub(r'[^-\.\w]', '_', hostname)
     if (ip.startswith('127.') or ip.startswith('255.') or
             hostname == 'localhost'):
         return
